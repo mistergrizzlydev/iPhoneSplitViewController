@@ -9,8 +9,9 @@
 import UIKit
 
 class SplitViewController: UISplitViewController {
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
         self.preferredDisplayMode = .allVisible
     }
 }
