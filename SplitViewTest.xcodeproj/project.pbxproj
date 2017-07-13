@@ -14,6 +14,9 @@
 		45A7F9DE1F17868E00030C62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A7F9DC1F17868E00030C62 /* LaunchScreen.storyboard */; };
 		45A7F9E91F17868E00030C62 /* SplitViewTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A7F9E81F17868E00030C62 /* SplitViewTestTests.swift */; };
 		45A7F9F41F17868E00030C62 /* SplitViewTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A7F9F31F17868E00030C62 /* SplitViewTestUITests.swift */; };
+		45A7FA021F17875E00030C62 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A7FA011F17875E00030C62 /* MasterViewController.swift */; };
+		45A7FA041F17876C00030C62 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A7FA031F17876C00030C62 /* DetailViewController.swift */; };
+		45A7FA071F17895700030C62 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A7FA061F17895700030C62 /* SplitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		45A7F9EF1F17868E00030C62 /* SplitViewTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplitViewTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45A7F9F31F17868E00030C62 /* SplitViewTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewTestUITests.swift; sourceTree = "<group>"; };
 		45A7F9F51F17868E00030C62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45A7FA011F17875E00030C62 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		45A7FA031F17876C00030C62 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		45A7FA061F17895700030C62 /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				45A7F9D31F17868E00030C62 /* AppDelegate.swift */,
+				45A7FA061F17895700030C62 /* SplitViewController.swift */,
+				45A7FA011F17875E00030C62 /* MasterViewController.swift */,
+				45A7FA031F17876C00030C62 /* DetailViewController.swift */,
 				45A7F9D51F17868E00030C62 /* ViewController.swift */,
 				45A7F9D71F17868E00030C62 /* Main.storyboard */,
 				45A7F9DA1F17868E00030C62 /* Assets.xcassets */,
@@ -259,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45A7FA071F17895700030C62 /* SplitViewController.swift in Sources */,
 				45A7F9D61F17868E00030C62 /* ViewController.swift in Sources */,
 				45A7F9D41F17868E00030C62 /* AppDelegate.swift in Sources */,
+				45A7FA021F17875E00030C62 /* MasterViewController.swift in Sources */,
+				45A7FA041F17876C00030C62 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
