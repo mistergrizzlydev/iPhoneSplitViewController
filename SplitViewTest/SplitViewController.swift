@@ -11,13 +11,6 @@ import UIKit
 class SplitViewController: UISplitViewController {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-
-        self.delegate = self
-    }
-}
-
-extension SplitViewController: UISplitViewControllerDelegate {
-    func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController: UIViewController, onto primaryViewController: UIViewController) -> Bool {
-        return true
+        self.preferredDisplayMode = .allVisible
     }
 }
