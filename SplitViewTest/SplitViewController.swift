@@ -13,5 +13,12 @@ class SplitViewController: UISplitViewController {
         super.viewDidLoad()
 
         self.preferredDisplayMode = .allVisible
+        self.delegate = self
+    }
+}
+
+extension SplitViewController: UISplitViewControllerDelegate {
+    public func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController: UIViewController, onto primaryViewController: UIViewController) -> Bool {
+        return true
     }
 }
