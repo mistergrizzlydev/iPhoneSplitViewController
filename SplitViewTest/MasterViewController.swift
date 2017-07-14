@@ -10,4 +10,38 @@ import UIKit
 
 class MasterViewController: UITableViewController {
     
+    let reuseIdentifier = "customCell"
+    let colors: [UIColor] = [.red, .blue, .green]
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier)
+        
+        cell?.textLabel?.text = "Message \(indexPath.row+1)"
+        cell?.textLabel?.textColor = colors[indexPath.row]
+        
+        cell?.detailTextLabel?.text = "Blablabla"
+        cell?.detailTextLabel?.textColor = UIColor.lightGray
+        
+        return cell!
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let controller = segue.destination as? DetailViewController else {
+            return
+        }
+        
+        guard let color = sender as? UIColor else {
+            return
+        }
+        
+        controller.color = color
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "detailSegue", sender: colors[indexPath.row])
+    }
 }
