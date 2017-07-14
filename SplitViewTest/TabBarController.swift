@@ -10,7 +10,7 @@ import UIKit
 
 class TabBarController: UITabBarController {
     
-    let tabbarTitles = ["Yellow","Red Split View"]
+    let tabbarTitles = ["Yellow","Split View"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
