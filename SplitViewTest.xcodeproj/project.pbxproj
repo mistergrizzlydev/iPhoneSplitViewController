@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		455392F91F17AC3E00E8A6B9 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455392F81F17AC3E00E8A6B9 /* TabBarController.swift */; };
 		45A7F9D41F17868E00030C62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A7F9D31F17868E00030C62 /* AppDelegate.swift */; };
 		45A7F9D61F17868E00030C62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A7F9D51F17868E00030C62 /* ViewController.swift */; };
 		45A7F9D91F17868E00030C62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A7F9D71F17868E00030C62 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		455392F81F17AC3E00E8A6B9 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		45A7F9D01F17868E00030C62 /* SplitViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplitViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45A7F9D31F17868E00030C62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45A7F9D51F17868E00030C62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				45A7F9D31F17868E00030C62 /* AppDelegate.swift */,
+				455392F81F17AC3E00E8A6B9 /* TabBarController.swift */,
 				45A7FA061F17895700030C62 /* SplitViewController.swift */,
 				45A7FA011F17875E00030C62 /* MasterViewController.swift */,
 				45A7FA031F17876C00030C62 /* DetailViewController.swift */,
@@ -271,6 +274,7 @@
 				45A7FA071F17895700030C62 /* SplitViewController.swift in Sources */,
 				45A7F9D61F17868E00030C62 /* ViewController.swift in Sources */,
 				45A7F9D41F17868E00030C62 /* AppDelegate.swift in Sources */,
+				455392F91F17AC3E00E8A6B9 /* TabBarController.swift in Sources */,
 				45A7FA021F17875E00030C62 /* MasterViewController.swift in Sources */,
 				45A7FA041F17876C00030C62 /* DetailViewController.swift in Sources */,
 			);
@@ -519,6 +523,7 @@
 				45A7F9FA1F17868E00030C62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		45A7F9FB1F17868E00030C62 /* Build configuration list for PBXNativeTarget "SplitViewTestTests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +532,7 @@
 				45A7F9FD1F17868E00030C62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		45A7F9FE1F17868E00030C62 /* Build configuration list for PBXNativeTarget "SplitViewTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -535,6 +541,7 @@
 				45A7FA001F17868E00030C62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
