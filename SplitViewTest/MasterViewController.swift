@@ -11,10 +11,10 @@ import UIKit
 class MasterViewController: UITableViewController {
     
     let reuseIdentifier = "customCell"
-    let colors: [UIColor] = [.red, .blue, .green]
+    let colors: [UIColor] = [.red, .blue, .green, .magenta, .purple]
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return colors.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
