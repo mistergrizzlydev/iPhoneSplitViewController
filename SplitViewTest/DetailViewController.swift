@@ -9,5 +9,11 @@
 import UIKit
 
 class DetailViewController: UIViewController {
+    var color: UIColor = UIColor.cyan
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        view.backgroundColor = color
+    }
 }
