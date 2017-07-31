@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ObjectViewController.swift
 //  SplitViewTest
 //
 //  Created by Utheim Sverdrup, Ulrik on 13.07.2017.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ObjectViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
