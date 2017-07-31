@@ -38,14 +38,10 @@ class MasterViewController: UITableViewController {
             return
         }
         
-        guard let color = sender as? UIColor else {
+        guard let indexPath = self.tableView.indexPathForSelectedRow else {
             return
         }
         
-        controller.color = color
-    }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "detailSegue", sender: colors[indexPath.row])
+        controller.color = colors[indexPath.row]
     }
 }
