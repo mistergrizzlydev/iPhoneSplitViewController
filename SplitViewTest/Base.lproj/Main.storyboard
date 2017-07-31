@@ -9,24 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Detail View Controller-->
-        <scene sceneID="Az8-WC-eZA">
-            <objects>
-                <viewController id="Oiy-tS-eDe" customClass="DetailViewController" customModule="SplitViewTest" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="w6q-0V-WFo"/>
-                        <viewControllerLayoutGuide type="bottom" id="u1a-4o-cUt"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="J6D-cg-g1h">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EmJ-gB-pPc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2830" y="-162"/>
-        </scene>
         <!--Root View Controller-->
         <scene sceneID="SDJ-rq-K71">
             <objects>
@@ -59,6 +41,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="1MC-E3-9ff" kind="showDetail" identifier="detailSegue" id="0y8-Uo-VHB"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -67,9 +52,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="JFN-Py-3BF"/>
-                    <connections>
-                        <segue destination="Oiy-tS-eDe" kind="showDetail" identifier="detailSegue" id="tl7-wG-x9s"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DLJ-8G-dn4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -98,7 +80,7 @@
                     <tabBarItem key="tabBarItem" title="Item" id="3iQ-io-0Yi"/>
                     <connections>
                         <segue destination="7o3-0x-wex" kind="relationship" relationship="masterViewController" id="h10-Zf-04P"/>
-                        <segue destination="Oiy-tS-eDe" kind="relationship" relationship="detailViewController" id="50M-IF-QrQ"/>
+                        <segue destination="1MC-E3-9ff" kind="relationship" relationship="detailViewController" id="6ce-40-BUh"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tAM-dL-ovm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -124,6 +106,34 @@
             </objects>
             <point key="canvasLocation" x="1977" y="69"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="oH0-85-1GC">
+            <objects>
+                <tableViewController id="1MC-E3-9ff" customClass="DetailViewController" customModule="SplitViewTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="MkU-4s-sjL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="favoriteCell" id="L7m-mH-ZCA">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="L7m-mH-ZCA" id="zpy-3K-eZJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="1MC-E3-9ff" id="n11-xK-qdh"/>
+                            <outlet property="delegate" destination="1MC-E3-9ff" id="Kig-1g-ujX"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jiH-MT-ULn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2830" y="-168"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="fxM-M1-Qdg">
             <objects>
@@ -144,6 +154,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="tl7-wG-x9s"/>
+        <segue reference="0y8-Uo-VHB"/>
     </inferredMetricsTieBreakers>
 </document>
