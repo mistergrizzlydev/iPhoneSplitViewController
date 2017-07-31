@@ -30,7 +30,11 @@ class MasterViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let controller = segue.destination as? DetailViewController else {
+        guard let navigationController = segue.destination as? UINavigationController else {
+            return
+        }
+        
+        guard let controller = navigationController.viewControllers.first as? DetailViewController else {
             return
         }
         

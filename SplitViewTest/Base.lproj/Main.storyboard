@@ -42,7 +42,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="1MC-E3-9ff" kind="showDetail" identifier="detailSegue" id="0y8-Uo-VHB"/>
+                                    <segue destination="f4k-bw-oB1" kind="showDetail" identifier="detailSegue" id="7oZ-JX-P2k"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -80,7 +80,7 @@
                     <tabBarItem key="tabBarItem" title="Item" id="3iQ-io-0Yi"/>
                     <connections>
                         <segue destination="7o3-0x-wex" kind="relationship" relationship="masterViewController" id="h10-Zf-04P"/>
-                        <segue destination="1MC-E3-9ff" kind="relationship" relationship="detailViewController" id="6ce-40-BUh"/>
+                        <segue destination="f4k-bw-oB1" kind="relationship" relationship="detailViewController" id="ttf-hm-xSI"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tAM-dL-ovm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -106,6 +106,22 @@
             </objects>
             <point key="canvasLocation" x="1977" y="69"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hfC-RV-upx">
+            <objects>
+                <navigationController id="f4k-bw-oB1" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="msk-Pe-soe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="1MC-E3-9ff" kind="relationship" relationship="rootViewController" id="Ey6-fE-4gY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VdO-tP-mEr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2830" y="-152"/>
+        </scene>
         <!--Detail View Controller-->
         <scene sceneID="oH0-85-1GC">
             <objects>
@@ -129,10 +145,11 @@
                             <outlet property="delegate" destination="1MC-E3-9ff" id="Kig-1g-ujX"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="Wwz-bg-jb8"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jiH-MT-ULn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2830" y="-168"/>
+            <point key="canvasLocation" x="3678" y="-152"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="fxM-M1-Qdg">
@@ -154,6 +171,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="0y8-Uo-VHB"/>
+        <segue reference="7oZ-JX-P2k"/>
     </inferredMetricsTieBreakers>
 </document>
