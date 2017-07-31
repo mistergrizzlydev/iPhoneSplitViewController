@@ -61,9 +61,10 @@
         <scene sceneID="uWS-Zh-3fO">
             <objects>
                 <navigationController id="7o3-0x-wex" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="m27-qL-Zye">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="m27-qL-Zye">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <connections>
                         <segue destination="2RC-4F-Sac" kind="relationship" relationship="rootViewController" id="IOy-MO-cvD"/>
@@ -110,9 +111,10 @@
         <scene sceneID="hfC-RV-upx">
             <objects>
                 <navigationController id="f4k-bw-oB1" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="msk-Pe-soe">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="msk-Pe-soe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <connections>
                         <segue destination="1MC-E3-9ff" kind="relationship" relationship="rootViewController" id="Ey6-fE-4gY"/>
@@ -120,7 +122,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VdO-tP-mEr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2830" y="-152"/>
+            <point key="canvasLocation" x="2830" y="-174"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="oH0-85-1GC">
@@ -149,7 +151,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jiH-MT-ULn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3678" y="-152"/>
+            <point key="canvasLocation" x="3678" y="-174"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="fxM-M1-Qdg">
@@ -159,6 +161,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
                         <segue destination="sCm-FJ-gJQ" kind="relationship" relationship="viewControllers" id="zfR-cB-B6l"/>
