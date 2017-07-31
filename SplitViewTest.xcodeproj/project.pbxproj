@@ -18,6 +18,7 @@
 		45A7FA021F17875E00030C62 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A7FA011F17875E00030C62 /* MasterViewController.swift */; };
 		45A7FA041F17876C00030C62 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A7FA031F17876C00030C62 /* DetailViewController.swift */; };
 		45A7FA071F17895700030C62 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A7FA061F17895700030C62 /* SplitViewController.swift */; };
+		45B258401F2F5BD000079737 /* SplitViewControllerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45B2583F1F2F5BD000079737 /* SplitViewControllerStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		45A7FA011F17875E00030C62 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		45A7FA031F17876C00030C62 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		45A7FA061F17895700030C62 /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
+		45B2583F1F2F5BD000079737 /* SplitViewControllerStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SplitViewControllerStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				45A7FA031F17876C00030C62 /* DetailViewController.swift */,
 				45A7F9D51F17868E00030C62 /* ObjectViewController.swift */,
 				45A7F9D71F17868E00030C62 /* Main.storyboard */,
+				45B2583F1F2F5BD000079737 /* SplitViewControllerStoryboard.storyboard */,
 				45A7F9DA1F17868E00030C62 /* Assets.xcassets */,
 				45A7F9DC1F17868E00030C62 /* LaunchScreen.storyboard */,
 				45A7F9DF1F17868E00030C62 /* Info.plist */,
@@ -247,6 +250,7 @@
 				45A7F9DE1F17868E00030C62 /* LaunchScreen.storyboard in Resources */,
 				45A7F9DB1F17868E00030C62 /* Assets.xcassets in Resources */,
 				45A7F9D91F17868E00030C62 /* Main.storyboard in Resources */,
+				45B258401F2F5BD000079737 /* SplitViewControllerStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

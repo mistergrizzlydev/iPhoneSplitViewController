@@ -12,6 +12,16 @@ class TabBarController: UITabBarController {
     
     let tabbarTitles = ["Yellow","Split View"]
     
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        let storyboard = UIStoryboard(name: "SplitViewControllerStoryboard", bundle: nil)
+        
+        let splitViewController = storyboard.instantiateViewController(withIdentifier: "SplitViewController")
+        
+        self.addChildViewController(splitViewController)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
